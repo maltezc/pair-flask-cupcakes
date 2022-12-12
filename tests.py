@@ -148,5 +148,14 @@ class CupcakeViewsTestCase(TestCase):
                 "deleted" : self.cupcake.id
             })
 
-    # ask about self
+    # ask about self # relates to set up instance created where self.cupcake = cupcake
+
     # add tests for pessimistic cases (id = 0)
+    def test_cupcake_does_not_exist(self):
+        """Tests that cupcake instsance does not exist"""
+        with app.test_client() as client:
+            url = f"/api/cupcakes/0"
+            resp = client.delete(url)
+
+            self.assertEqual(resp.status_code, 404)
+

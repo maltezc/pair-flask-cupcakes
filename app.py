@@ -18,6 +18,13 @@ connect_db(app)
 db.create_all()
 
 
+@app.get('/')
+def display_home():
+    """Renders homepage"""
+
+    return render_template("index.html")
+
+
 @app.get('/api/cupcakes')
 def get_all_cupcakes():
     """Gets all cupcakes"""
