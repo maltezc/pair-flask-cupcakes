@@ -147,3 +147,5 @@ class CupcakeViewsTestCase(TestCase):
             self.assertEqual(data, {
                 "deleted" : self.cupcake.id
             })
+
+    # ask about self
