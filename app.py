@@ -28,7 +28,7 @@ def get_all_cupcakes():
 
     return jsonify(cupcakes=serialized)
 
-@app.get('/api/cupcakes/<int: cupcake_id>')
+@app.get('/api/cupcakes/<int:cupcake_id>')
 def get_cupcake(cupcake_id):
     """Gets data about single cupcake"""
 
@@ -57,7 +57,3 @@ def create_cupcake():
 
     serialized = new_cupcake.serialize()
     return (jsonify(cupcake=serialized),201)
-
-
-
-
