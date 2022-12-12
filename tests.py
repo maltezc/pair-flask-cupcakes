@@ -149,3 +149,4 @@ class CupcakeViewsTestCase(TestCase):
             })
 
     # ask about self
+    # add tests for pessimistic cases (id = 0)
