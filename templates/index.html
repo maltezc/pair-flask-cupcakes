@@ -10,7 +10,7 @@
   <h1>Cupcakes!</h1>
 
   <div class='add_cupcake_form'>
-    <form action="/api/cupcakes" method="POST">
+    <form>
       <div>
         <label for="flavor">Flavor</label>
         <input id="flavor" name="flavor" type="text">
@@ -27,7 +27,7 @@
         <label for="image">Image</label>
         <input id="image" name="image" type="text">
       </div>
-      <button type='submit'>Submit</button>
+      <button id='submit_cupcake' type='submit'>Submit</button>
     </form>
   </div>
 
@@ -45,7 +45,7 @@
     crossorigin="anonymous"></script>
   <!-- <script src=“http://unpkg.com/axios/dist/axios.js”></script> -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="/static/script.js"></script>
+  <script src="/static/cupcake.js"></script>
 
 </body>
 </html>
